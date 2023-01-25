@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>haallooooo</p>
+    <p class="bg-blue-600">haallooooo</p>
     <div class="hero"></div>
   </div>
 </template>
