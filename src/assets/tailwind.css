@@ -3,3 +3,64 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+  header {
+    @apply relative h-[90vh] bg-green-300;
+  }
+  nav.navbar {
+    @apply bg-black absolute top-0 left-0 w-screen h-16 flex justify-between px-11 items-center z-50;
+  }
+
+  .user-icon img {
+    width: 28px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(71deg)
+      brightness(110%) contrast(100%);
+  }
+
+  .hero-section {
+    @apply w-screen h-full pt-20 p-36 grid place-items-center relative bg-black;
+  }
+
+  .hero-section::before {
+    @apply absolute inset-0 opacity-60;
+    content: "";
+    background-image: url(../assets/bg-hero.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-section > * {
+    position: relative;
+  }
+
+  .titel-section {
+    @apply flex justify-center flex-col;
+  }
+
+  .titel-section .title {
+    @apply font-title text-white text-base font-semibold;
+  }
+
+  .button-section {
+    @apply w-[38vw] h-[70px]  flex justify-center gap-4;
+  }
+
+  .button-section > .btn {
+    @apply w-1/2 rounded-lg h-full font-title font-bold text-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-white;
+  }
+
+  .btn-primary {
+    @apply bg-black text-white;
+  }
+}
+
+/* @layer base {
+  .button-section .btn {
+    @apply font-title font-bold text-md;
+  }
+} */

@@ -1,9 +1,13 @@
 <template>
   <Header />
+  <div class="container">
+    <!-- main -->
+    <!-- footer -->
+  </div>
 </template>
 
 <script>
-import Header from "./components/MyHeader.vue";
+import Header from "./views/MyHeader.vue";
 
 export default {
   name: "App",
