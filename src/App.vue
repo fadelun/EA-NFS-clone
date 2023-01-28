@@ -2,18 +2,20 @@
   <Header />
 
   <Main />
-  <!-- footer -->
+  <Footer />
 </template>
 
 <script>
 import Header from "./views/MyHeader.vue";
 import Main from "./views/MyMain.vue";
+import Footer from "./views/MyFooter.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Main,
+    Footer,
   },
 };
 </script>

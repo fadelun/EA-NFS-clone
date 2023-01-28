@@ -6,7 +6,7 @@
 
 @layer components {
   header {
-    @apply relative h-[90vh] bg-green-300;
+    @apply relative h-[90vh];
   }
   nav.navbar {
     @apply bg-black absolute top-0 left-0 w-screen h-16 flex justify-between px-11 items-center z-50;
@@ -87,10 +87,29 @@
   main article .game-list button {
     @apply w-[200px] h-[70px] mt-16 rounded-md font-title font-bold text-lg bg-transparent hover:bg-white border-white border-2 text-white hover:text-gray-800 ease-in duration-200 transition-colors;
   }
-}
 
-/* @layer base {
-  .button-section .btn {
-    @apply font-title font-bold text-md;
+  /* footer */
+  footer {
+    @apply bg-black py-14;
   }
-} */
+
+  footer .nav-footer {
+    @apply w-full flex flex-col;
+  }
+
+  footer .nav-footer .logo-nfs {
+    @apply flex justify-center mb-3;
+  }
+
+  footer .nav-footer ul {
+    @apply flex justify-center gap-x-12 text-white font-reguler font-bold;
+  }
+
+  footer .nav-social-media {
+    @apply w-full justify-center gap-x-2;
+  }
+
+  footer .nav-social-media ul .circle {
+    @apply w-14 h-14 bg-white border-white border-2;
+  }
+}
