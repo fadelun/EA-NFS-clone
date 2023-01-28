@@ -59,18 +59,10 @@
   }
 
   .container {
-    @apply mx-auto bg-blue-500;
+    @apply mx-auto;
   }
 
-  main {
-    @apply bg-blue-600;
-  }
-
-  main article {
-    @apply bg-blue-700;
-  }
-
-  main article .description {
+  main article .description .container {
     @apply grid place-content-center py-[12%];
   }
 
@@ -79,17 +71,21 @@
   }
 
   main article .game-list {
-    @apply flex flex-wrap justify-center  gap-4 bg-gray-700;
+    @apply bg-gray-800 py-14;
+  }
+
+  main article .game-list .container {
+    @apply flex flex-wrap gap-y-7 sm:gap-2 md:gap-5 justify-center;
   }
 
   main article .game-list .card {
-    @apply w-1/4 h-[240px] relative;
+    @apply w-[80%] sm:w-[40%] md:w-[30%] h-[200px] sm:h-[32vh] md:h-[340px] relative shadow-md;
   }
   main article .game-list .card .card-img {
-    @apply relative w-full h-full;
+    @apply w-full h-full grid place-content-center bg-no-repeat bg-cover bg-center;
   }
-  main article .game-list .card h2 {
-    @apply absolute inset-0 text-center;
+  main article .game-list button {
+    @apply text-center;
   }
 }
 

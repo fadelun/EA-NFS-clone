@@ -1,23 +1,30 @@
 <template>
   <main>
-    <article class="container">
+    <article>
       <div class="description">
-        <p>
-          Race against time, outsmart the cops, and take on weekly qualifiers to
-          reach The Grand, Lakeshore's ultimate street racing challenge. Pack
-          your garage with precision-tuned, custom rides and light up the
-          streets with your style, exclusive fits, and a vibrant global
-          soundtrack that bumps in every corner of the world.
-        </p>
-      </div>
-      <div class="game-list">
-        <div v-for="game in games" :key="game" class="card">
-          <div class="card-img" :style="backgroundImageCard">
-            <h2><img :src="game.logo" :alt="game.name" /></h2>
-          </div>
-          <!-- <img :src="game.image" :alt="game.name + ' image'" /> -->
+        <div class="container">
+          <p>
+            Race against time, outsmart the cops, and take on weekly qualifiers
+            to reach The Grand, Lakeshore's ultimate street racing challenge.
+            Pack your garage with precision-tuned, custom rides and light up the
+            streets with your style, exclusive fits, and a vibrant global
+            soundtrack that bumps in every corner of the world.
+          </p>
         </div>
       </div>
+      <div class="game-list">
+        <div class="container">
+          <div v-for="game in gamesData" :key="game" class="card">
+            <div
+              class="card-img"
+              :style="`background-image: url(${game.image})`"
+            >
+              <h2><img :src="game.logo" :alt="game.name" /></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="">More games</button>
     </article>
   </main>
 </template>
@@ -42,7 +49,7 @@ export default {
   //   },
   data() {
     return {
-      games: [
+      gamesData: [
         {
           name: "NFS heat",
           logo: nfsHeatLogo,
@@ -76,16 +83,17 @@ export default {
       ],
     };
   },
-  computed: {
-    backgroundImageCard() {
-      const getImage = this.games.map((game) => {
-        if (game.image) {
-          return game.image;
-        }
-      });
-      console.log(getImage);
-      return `background-image: url("${getImage}")`;
-    },
-  },
+  // computed: {
+  //   backgroundImageCard() {
+  //     console.log(this);
+  //     return `background-image: url(${game.image})`;
+  //     // return this.gamesData.map((game) => {
+  //     //   if (game.image) {
+  //     //     // console.log(game.image);
+  //     //     return `background-image: url(${game.image})`;
+  //     //   }
+  //     // });
+  //   },
+  // },
 };
 </script>
