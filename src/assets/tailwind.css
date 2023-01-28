@@ -47,7 +47,7 @@
   }
 
   .button-section > .btn {
-    @apply w-1/2 rounded-lg h-full font-title font-bold text-lg;
+    @apply w-1/2 rounded-md h-full font-title font-bold text-lg;
   }
 
   .btn-secondary {
@@ -85,7 +85,7 @@
     @apply w-full h-full grid place-content-center bg-no-repeat bg-cover bg-center;
   }
   main article .game-list button {
-    @apply text-center;
+    @apply w-[200px] h-[70px] mt-16 rounded-md font-title font-bold text-lg bg-transparent hover:bg-white border-white border-2 text-white hover:text-gray-800 ease-in duration-200 transition-colors;
   }
 }
 
