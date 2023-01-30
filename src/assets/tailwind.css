@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
 @tailwind base;
 
 @tailwind components;
@@ -9,7 +11,11 @@
     @apply relative h-[90vh];
   }
   nav.navbar {
-    @apply bg-black absolute top-0 left-0 w-screen h-16 flex justify-between px-11 items-center z-50;
+    @apply bg-black absolute top-0 left-0 right-0 h-16 flex justify-between px-11 items-center z-50 font-reguler text-white font-bold;
+  }
+
+  nav.navbar ul {
+    @apply flex justify-center gap-x-12;
   }
 
   .user-icon img {
@@ -67,7 +73,7 @@
   }
 
   main article .description p {
-    @apply font-reguler font-medium text-xl;
+    @apply font-reguler font-medium text-3xl;
   }
 
   main article .game-list {

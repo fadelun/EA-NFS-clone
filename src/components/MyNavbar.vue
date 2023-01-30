@@ -1,14 +1,18 @@
 <template>
   <nav class="navbar">
-    <span class="logo EA-icon">
+    <div class="logo EA-icon">
       <img :src="icons.EA" alt="EA logo" />
-    </span>
-    <span class="logo NFS-icon">
-      <img :src="icons.NFS" alt="NFS logo" />
-    </span>
-    <span class="user-icon">
-      <img :src="icons.userIcon" alt="user icon" />
-    </span>
+    </div>
+    <ul>
+      <li><a href="#">Browser Games</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Forums</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+    <div class="sign-in">
+      <a href="#">Sign in</a>
+    </div>
   </nav>
 </template>
 <script>

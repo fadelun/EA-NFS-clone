@@ -6,7 +6,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       title: ['Montserrat', 'sans-serif'],
-      reguler: ['PT Sans', 'Poppins', 'sans-serif'],
+      reguler: ['PT Sans Narrow', 'Poppins', 'sans-serif'],
     }
   },
   plugins: [],

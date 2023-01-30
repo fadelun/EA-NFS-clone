@@ -3,7 +3,9 @@
     <div class="container">
       <nav class="nav-footer">
         <div class="logo-nfs">
-          <img :src="require('@/assets/NFS.svg')" alt="NFS logo" />
+          <a href="#">
+            <img :src="require('@/assets/NFS.svg')" alt="NFS logo" />
+          </a>
         </div>
         <ul>
           <li><a href="#">Browser Games</a></li>

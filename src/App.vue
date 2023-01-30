@@ -1,6 +1,5 @@
 <template>
   <Header />
-
   <Main />
   <Footer />
 </template>
@@ -27,7 +26,7 @@ export default {
   box-sizing: border-box;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", Poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
