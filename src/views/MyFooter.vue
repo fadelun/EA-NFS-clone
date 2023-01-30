@@ -15,10 +15,26 @@
       </nav>
       <nav classs="nav-social-media">
         <ul>
-          <li class="circle"><a href="#"></a></li>
-          <li class="circle"><a href="#"></a></li>
-          <li class="circle"><a href="#"></a></li>
-          <li class="circle"><a href="#"></a></li>
+          <li class="circle">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="circle">
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li class="circle">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="circle">
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
         </ul>
       </nav>
       <p>All resources by Electronic Arts</p>
@@ -26,6 +42,9 @@
   </footer>
 </template>
 <script>
+// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+// import { library } from "@fortawesome/fontawesome-svg-core";
+
 export default {
   name: "MyFooter",
   data() {

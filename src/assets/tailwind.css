@@ -71,7 +71,7 @@
   }
 
   main article .game-list {
-    @apply bg-gray-800 py-14;
+    @apply bg-gray-800 py-24;
   }
 
   main article .game-list .container {
@@ -90,26 +90,34 @@
 
   /* footer */
   footer {
-    @apply bg-black py-14;
+    @apply bg-black pt-24 pb-20 text-white;
   }
 
   footer .nav-footer {
-    @apply w-full flex flex-col;
+    @apply w-full flex flex-col mb-8;
   }
 
   footer .nav-footer .logo-nfs {
-    @apply flex justify-center mb-3;
+    @apply flex justify-center mb-5;
   }
 
   footer .nav-footer ul {
-    @apply flex justify-center gap-x-12 text-white font-reguler font-bold;
+    @apply flex justify-center gap-x-12  font-reguler font-bold;
   }
 
   footer .nav-social-media {
-    @apply w-full justify-center gap-x-2;
+    @apply w-full mb-5; /* gak kebaca di browser */
   }
 
-  footer .nav-social-media ul .circle {
-    @apply w-14 h-14 bg-white border-white border-2;
+  footer ul {
+    @apply w-full flex justify-center gap-x-3;
+  }
+  footer .circle {
+    @apply w-14 h-14 border-spacing-2 rounded-full  border-white border-2 text-2xl grid place-items-center
+     hover:bg-white hover:text-black  ease-in duration-200 transition-colors;
+  }
+
+  footer p {
+    @apply mt-5;
   }
 }
