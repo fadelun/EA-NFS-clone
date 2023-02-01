@@ -15,12 +15,16 @@
       <div class="game-list">
         <div class="container">
           <div v-for="game in gamesData" :key="game" class="card">
-            <div
-              class="card-img"
-              :style="`background-image: url(${require(`@/assets/${game.image}`)})`"
-            >
-              <h2><img :src="game.logo" :alt="game.name" /></h2>
-            </div>
+            <a href="#">
+              <div
+                class="card-img"
+                :style="`background-image: url(${require(`@/assets/${game.image}`)})`"
+              >
+                <h2>
+                  <img :src="game.logo" :alt="game.name" />
+                </h2>
+              </div>
+            </a>
           </div>
         </div>
         <button class="">More games</button>
@@ -78,17 +82,10 @@ export default {
       ],
     };
   },
-  // computed: {
-  //   backgroundImageCard() {
-  //     console.log(this);
-  //     return `background-image: url(${game.image})`;
-  //     // return this.gamesData.map((game) => {
-  //     //   if (game.image) {
-  //     //     // console.log(game.image);
-  //     //     return `background-image: url(${game.image})`;
-  //     //   }
-  //     // });
-  //   },
-  // },
+  // computed:{
+  //   background(){
+  //     return `background-image: url(${require(`@/assets/${game.image}`)})`
+  //   }
+  // }
 };
 </script>
