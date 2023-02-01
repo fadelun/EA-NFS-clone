@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="logo EA-icon">
-      <img :src="icons.EA" alt="EA logo" />
+      <img :src="require('@/assets/EA.svg')" alt="NFS logo" />
     </div>
     <ul>
       <li><a href="#">Browser Games</a></li>
@@ -16,21 +16,8 @@
   </nav>
 </template>
 <script>
-import EA from "@/assets/EA.svg";
-import NFS from "@/assets/NFS.svg";
-import userIcon from "@/assets/user-regular.svg";
-
 export default {
   name: "MyNavbar",
-  data() {
-    return {
-      icons: {
-        EA,
-        NFS,
-        userIcon,
-      },
-    };
-  },
 };
 </script>
 <style></style>
