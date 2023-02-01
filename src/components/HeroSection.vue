@@ -12,9 +12,7 @@
     </div>
 
     <div class="button-section">
-      <button class="btn btn-secondary">
-        Watch Trailer
-        <!-- import svg play --></button
+      <button class="btn btn-secondary">Watch Trailer</button
       ><button class="btn btn-primary">Buy Now</button>
     </div>
   </div>

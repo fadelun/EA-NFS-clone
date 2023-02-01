@@ -37,6 +37,11 @@
               <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
+          <!-- <li class="circle">
+            <a href="#">
+              
+            </a>
+          </li> -->
         </ul>
       </nav>
       <p>All resources by Electronic Arts</p>
