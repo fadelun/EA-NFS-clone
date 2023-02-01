@@ -7,6 +7,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* header */
   header {
     @apply relative h-[90vh];
   }
@@ -25,7 +26,7 @@
   }
 
   .hero-section {
-    @apply w-screen h-full pt-12 md:pt-20  px-14 md:px-36 grid place-items-center relative bg-black;
+    @apply w-full h-full pt-12 md:pt-20  px-14 md:px-36 grid place-items-center relative bg-black;
   }
 
   .hero-section::before {
@@ -49,11 +50,11 @@
   }
 
   .button-section {
-    @apply min-w-[300px] w-[34vw] h-[70px]  flex justify-center gap-4;
+    @apply min-w-[300px] w-[38vw]  flex justify-center flex-wrap gap-4;
   }
 
   .button-section > .btn {
-    @apply w-1/2 rounded-md h-full font-title font-bold text-lg;
+    @apply w-1/2 md:w-2/5 h-14 rounded-md  font-title font-bold text-lg;
   }
 
   .btn-secondary {
@@ -68,6 +69,7 @@
     @apply mx-auto;
   }
 
+  /* main */
   main article .description .container {
     @apply grid place-content-center py-[12%];
   }
@@ -81,15 +83,23 @@
   }
 
   main article .game-list .container {
-    @apply flex flex-wrap gap-y-7 sm:gap-2 md:gap-5 justify-center;
+    @apply flex flex-wrap gap-y-7 sm:gap-3 md:gap-8 justify-center;
   }
 
   main article .game-list .card {
-    @apply w-[80%] sm:w-[40%] md:w-[30%] h-[200px] sm:h-[32vh] md:h-[340px] relative shadow-md;
+    /* add before  */
+    @apply w-[80%] sm:w-[40%] md:w-[30%] h-[200px] sm:h-[40vh] md:h-[400px] relative shadow-md;
   }
+
   main article .game-list .card .card-img {
-    @apply w-full h-full grid place-content-center bg-no-repeat bg-cover bg-center;
+    @apply w-full h-full bg-no-repeat bg-cover bg-center 
+    before:opacity-0 hover:before:opacity-80 before:absolute before:inset-0 before:bg-gradient-to-l from-ea-theme-light to-ea-theme-dark opacity-80 before:transition-all;
   }
+
+  main article .game-list .card h2 {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] drop-shadow-[2px_2px_2px_black];
+  }
+
   main article .game-list button {
     @apply w-[200px] h-[70px] mt-16 rounded-md font-title font-bold text-lg bg-transparent hover:bg-white border-white border-2 text-white hover:text-gray-800 ease-in duration-200 transition-colors;
   }
@@ -116,7 +126,7 @@
   }
 
   footer ul {
-    @apply w-full flex justify-center gap-x-3;
+    @apply w-full  flex flex-wrap justify-center gap-x-3;
   }
   footer .circle {
     @apply w-14 h-14 border-spacing-2 rounded-full  border-white border-2 text-2xl grid place-items-center
