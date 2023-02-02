@@ -9,20 +9,33 @@
 @layer components {
   /* header */
   header {
-    @apply relative h-[90vh];
+    @apply relative min-h-[500px] h-[90vh];
   }
   nav.navbar {
-    @apply bg-black absolute top-0 left-0 right-0 h-16 flex justify-between px-11 items-center z-50 font-reguler text-white font-bold;
+    @apply bg-black absolute top-0 left-0 right-0 h-16 flex justify-between px-2 sm:px-11 items-center z-30 font-reguler text-white font-bold;
   }
 
-  nav.navbar ul {
-    @apply flex justify-center gap-x-12;
+  .button-bar {
+    @apply block md:hidden border-2 border-white rounded-lg py-1 px-3 text-2xl;
   }
 
-  .user-icon img {
-    width: 28px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(71deg)
-      brightness(110%) contrast(100%);
+  .nav-mobile-active {
+    @apply fixed inset-0 !flex flex-col !justify-between  py-8   bg-ea-theme-dark text-white z-50;
+  }
+  nav.navbar .menu {
+    @apply md:w-2/3 hidden md:flex justify-between;
+  }
+
+  nav.navbar .menu ul {
+    @apply flex flex-col md:flex-row md:justify-center  gap-y-6 md:gap-y-0 sm:gap-x-7 lg:gap-x-12 overflow-auto;
+  }
+
+  nav.navbar .menu .sign-in {
+    @apply bg-white text-black mx-auto md:mx-0 my-2 md:my-0;
+  }
+
+  nav.navbar .menu .sign-in a {
+    @apply bg-white text-black  py-1 px-5 rounded-sm;
   }
 
   .hero-section {
