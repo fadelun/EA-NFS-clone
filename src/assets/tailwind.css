@@ -19,6 +19,10 @@
     @apply block md:hidden border-2 border-white rounded-lg py-1 px-3 text-2xl;
   }
 
+  .button-close {
+    @apply py-2 px-3 text-2xl absolute top-1 right-1;
+  }
+
   .nav-mobile-active {
     @apply fixed inset-0 !flex flex-col !justify-between  py-8   bg-ea-theme-dark text-white z-50;
   }
@@ -31,7 +35,7 @@
   }
 
   nav.navbar .menu .sign-in {
-    @apply bg-white text-black mx-auto md:mx-0 my-2 md:my-0;
+    @apply mx-auto md:mx-0 my-2 md:my-0;
   }
 
   nav.navbar .menu .sign-in a {

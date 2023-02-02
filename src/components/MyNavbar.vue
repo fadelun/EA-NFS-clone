@@ -4,10 +4,13 @@
       <img :src="require('@/assets/EA.svg')" alt="NFS logo" />
     </div>
     <button class="button-bar" @click="navbarHandler">
-      <i class="fa-solid fa-bars"></i>
+      <i v-show="!isActive" class="fa-solid fa-bars"></i>
     </button>
 
     <nav class="menu" :class="{ 'nav-mobile-active': isActive }">
+      <button v-show="isActive" class="button-close" @click="navbarHandler">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <ul>
         <li><a href="#">Browser Games</a></li>
         <li><a href="#">News</a></li>
